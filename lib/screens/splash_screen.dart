@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
 
     super.initState();
-    Timer(Duration(seconds: 3), ()=>Navigator.pushReplacement(context, MaterialPageRoute(builder:(context)=>HomePage())));
+    Timer(Duration(seconds: 30), ()=>Navigator.pushReplacement(context, MaterialPageRoute(builder:(context)=>HomePage())));
   }
   
   @override
@@ -36,20 +36,19 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Column(
-                        children:[
-                                                Image.asset('assets\images\logo.png', height:300, width:300),
+                     // Column(
+                        //children:[
+                      Image.asset("assets/images/logo.png", height:300, width:300),
                       Text('Tech News', 
                        textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 30,
                           ),),
-                        ]
-                      ),
-                      SizedBox(height:50),
+                       // ]
+                     // ),
                       CircularProgressIndicator(),
                     ],                  
                 ),
