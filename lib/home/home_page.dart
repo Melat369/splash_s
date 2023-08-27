@@ -6,11 +6,10 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: 
-      
-      
+      appBar: AppBar(
+         title: Text("Poe site")
       ),
+      body: Center(child: Text("Home Page")),
     );
   }
 }
