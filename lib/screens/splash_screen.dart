@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
 
     super.initState();
-    Timer(Duration(seconds: 30), ()=>Navigator.pushReplacement(context, MaterialPageRoute(builder:(context)=>HomePage())));
+    Timer(Duration(seconds: 5), ()=>Navigator.pushReplacement(context, MaterialPageRoute(builder:(context)=>HomePage())));
   }
   
   @override
@@ -29,8 +29,8 @@ class _SplashScreenState extends State<SplashScreen> {
         gradient: LinearGradient(
           begin: Alignment.topRight,
           end: Alignment.bottomRight,
-          colors: [Color(0xffE19898),
-                   Color(0xffA2678A)
+          colors: [Colors.black,
+                   Colors.white
                    ]
                  ),
                 ),
