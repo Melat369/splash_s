@@ -1,15 +1,25 @@
 import 'package:flutter/material.dart';
 
-class SplashS extends StatefulWidget {
-  const SplashS ({super.key});
+class Splash extends StatefulWidget {
+  const Splash({super.key});
 
   @override
-  State<SplashS > createState() => _SplashS State();
+  State<Splash> createState() => _SplashState();
 }
 
-class _SplashS State extends State<SplashS > {
+class _SplashState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+   
+      body: Container(
+        child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        ),
+
+      ),
+
+    );
   }
 }
