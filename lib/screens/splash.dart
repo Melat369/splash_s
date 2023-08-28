@@ -19,7 +19,9 @@ class _SplashState extends State<Splash> {
         gradient: LinearGradient(
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
-          colors: Colors.red, Colors.orange),
+          colors:
+        {Colors.red, 
+        Colors.orange]
         ),
         child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -28,6 +30,6 @@ class _SplashState extends State<Splash> {
 
       ),
 
-    );
+    ));
   }
 }
