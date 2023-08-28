@@ -13,6 +13,14 @@ class _SplashState extends State<Splash> {
     return Scaffold(
    
       body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+          colors: Colors.red, Colors.orange),
+        ),
         child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,
